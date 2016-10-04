@@ -11,4 +11,7 @@ Eventually, I want to incorporate some other features like:
 
 ## Notes  
 
-Tools used: Adobe Photoshop, Unity
+Tools used:  
+* Sprites: Adobe Photoshop 
+* Game: Unity  
+* Sound Effects: [bfxr](http://www.bfxr.net/)
