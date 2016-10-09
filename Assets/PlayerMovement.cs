@@ -6,10 +6,12 @@ public class PlayerMovement : MonoBehaviour {
 	public float movementSpeedMultiplier = 0.01f;
 	private bool playerIsStationary;
 	private string playerFacingDirection = "down";
+	private bool playerIsMoving;
 
 	// Use this for initialization
 	void Start () {
 		playerIsStationary = true;
+		playerIsMoving = false;
 	}
 	
 	// Update is called once per frame
@@ -42,9 +44,15 @@ public class PlayerMovement : MonoBehaviour {
 				SetPlayerDirection ("right");
 			}
 		}
+
+		if (playerIsMoving) {
+			//play animation based on direction
+		} else if (!playerIsMoving) {
+			//set sprite to stationary
+		}
 	}
 
-	void SetPlayerDirection(dir) {
+	void SetPlayerDirection(string dir) {
 		playerIsStationary = false;
 
 		playerFacingDirection = dir;
